@@ -11,13 +11,10 @@
 
     "baseUrl": ".",
     "paths": {
-      "config/*": ["config/*"],
       "api/*": ["api/*"],
       "constants/*": ["constants/*"],
       "helpers/*": ["helpers/*"],
       "interfaces/*": ["interfaces/*"],
-      "mails/*": ["mails/*"],
-      "sms/*": ["sms/*"],
       "middlewares/*": ["middlewares/*"],
       "models/*": ["models/*"],
       "routers/*": ["routers/*"],

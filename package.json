@@ -32,7 +32,7 @@
     "watch": [
       "."
     ],
-    "exec": "node -r ts-node/register ./index.ts",
+    "exec": "node -r tsconfig-paths/register -r ts-node/register ./index.ts",
     "ext": "ts, js",
     "engines": {
       "node": "12.16.3"
