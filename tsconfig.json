@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["es6", "dom", "es2017"],
+    "rootDir": "./",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "strict": true,
+    "typeRoots": ["./node_modules/@types", "./types.d.ts"],
+
+    "baseUrl": ".",
+    "paths": {
+      "config/*": ["config/*"],
+      "api/*": ["api/*"],
+      "constants/*": ["constants/*"],
+      "helpers/*": ["helpers/*"],
+      "interfaces/*": ["interfaces/*"],
+      "mails/*": ["mails/*"],
+      "sms/*": ["sms/*"],
+      "middlewares/*": ["middlewares/*"],
+      "models/*": ["models/*"],
+      "routers/*": ["routers/*"],
+      "utils/*": ["utils/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
