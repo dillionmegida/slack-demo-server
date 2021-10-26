@@ -4,6 +4,8 @@ import cors from "cors";
 
 config();
 
+import "./database";
+
 const app = express();
 app.use(cors());
 

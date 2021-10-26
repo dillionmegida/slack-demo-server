@@ -11,13 +11,13 @@
 
     "baseUrl": ".",
     "paths": {
-      "api/*": ["api/*"],
+      "controllers/*": ["api/controllers/*"],
+      "routers/*": ["api/routers/*"],
       "constants/*": ["constants/*"],
       "helpers/*": ["helpers/*"],
       "interfaces/*": ["interfaces/*"],
       "middlewares/*": ["middlewares/*"],
       "models/*": ["models/*"],
-      "routers/*": ["routers/*"],
       "utils/*": ["utils/*"]
     }
   },

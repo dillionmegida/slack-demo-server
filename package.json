@@ -17,9 +17,14 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "nanoid": "^3.1.30",
     "ts-node": "^10.4.0"
   },
   "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "@types/nanoid": "^3.0.0",
+    "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.4"
   },
   "nodemonConfig": {
