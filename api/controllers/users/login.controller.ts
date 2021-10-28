@@ -6,8 +6,6 @@ import { createToken } from "utils/token";
 export default async function Login(req: Request, res: Response) {
   const { email, password } = req.body;
 
-  console.log({ email, password });
-
   try {
     const userExists = await UserModel.findOne({ email });
 
@@ -34,6 +32,7 @@ export default async function Login(req: Request, res: Response) {
         _id: userExists._id,
         email: userExists.email,
         name: userExists.name,
+        image: userExists.image,
       },
       token,
     });
