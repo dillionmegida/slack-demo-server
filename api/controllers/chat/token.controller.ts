@@ -5,7 +5,7 @@ import { STREAM_API_KEY, STREAM_SECRET_KEY } from "constants/keys";
 
 const serverClient = StreamChat.getInstance(STREAM_API_KEY, STREAM_SECRET_KEY);
 
-export default async function ConnectUser(req: Request, res: Response) {
+export default async function getStreamToken(req: Request, res: Response) {
   const { user_id } = req.params;
 
   try {
@@ -22,11 +22,10 @@ export default async function ConnectUser(req: Request, res: Response) {
 
     res.json({
       token,
-      user: userExists,
     });
   } catch (err) {
     res
       .status(500)
-      .json({ message: "Error! cannot connect user at the moment" });
+      .json({ message: "Error! cannot get token at the moment" });
   }
 }

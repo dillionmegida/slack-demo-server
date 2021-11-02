@@ -1,8 +1,8 @@
 import express from "express";
-import ConnectUser from "controllers/chat/connect-user.controller";
+import getStreamToken from "controllers/chat/token.controller";
 
 const ChatRouter = express.Router();
 
-ChatRouter.post("/connect_user/:user_id", ConnectUser);
+ChatRouter.post("/token/:user_id", getStreamToken);
 
 export default ChatRouter;
