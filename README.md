@@ -87,7 +87,7 @@ Now, your server would be running on `localhost:5000`, and your frontend can now
 
 ## Deployment
 
-Deploying this backend to a server is a bit more complicated. And the reason for this is, you need a database. I think platforms like Heroku can be suitable for this, but I haven't used them yet.
+Deploying this backend to a server is a bit more complicated. And the reason for this is, you need a database. Since hosting providers may not allow you to install MongoDB on their servers, you may want to check out [MongoDb Atlas](https://www.mongodb.com/cloud/atlas/lp/try2)
 
 ## Author
 
